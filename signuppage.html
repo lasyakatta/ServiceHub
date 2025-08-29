@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ServiceHub - Sign Up</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <h2 class="logo">Service<span class="highlight">Hub</span></h2>
+    </header>
+
+    <!-- Main Sign Up Form -->
+    <div class="signup-container">
+        <h1>Create Account</h1>
+        <form action="#" class="signup-form">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" placeholder="Enter your full name:">
+            
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="Enter your phone number:">
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter a password:">
+            
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" placeholder="Confirm your password:">
+            <!-- Sign Up Button with Hyperlink -->
+            <a href="landingpage.html">
+                <button type="button" class="signup-button">Sign Up</button>
+            </a>
+        </form>
+        <p class="login-text">Already have an account? <a href="loginpage.html">log in</a></p>
+    </div>
+</body>
+</html>
+<style>
+    /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.highlight {
+    color: #ff6b6b;
+}
+
+/* Signup Container */
+.signup-container {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    padding: 20px;
+}
+
+.signup-container h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.signup-form label {
+    font-size: 1rem;
+    color: #333;
+    text-align: left;
+}
+
+.signup-form input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.signup-form input::placeholder {
+    color: #bbb;
+}
+
+.signup-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #5bb1ff;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+signup-button:hover {
+    background-color: #4a9fe2;
+}
+/* Login Text */
+.login-text {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.login-text a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+.login-text a:hover {
+    text-decoration: underline;
+}
+
+</style>

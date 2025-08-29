@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ServiceHub - Request a Service</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <span>Service</span><span class="hub">Hub</span>
+        </div>
+        <nav>
+            <a href="landingpage.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="about us.html">About Us</a>
+            <a href="contact us.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <!-- Sub-Navigation for Services -->
+    <div class="sub-nav">
+        <a href="home repairs.html">Home Repairs</a>
+        <a href="wedding planning.html">Wedding Planning</a>
+        <a href="building construction.html">Building Construction</a>
+        <a href="other services.html">Other Services</a>
+    </div>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+        <p>Home / Directory / Book Now</p>
+    </section>
+
+    <!-- Request a Service Form -->
+    <section class="request-service">
+        <h1>Request a Service</h1>
+        <p class="form-description">Submit your request to service providers</p>
+
+        <form id="serviceForm" action="#" method="post" onsubmit="return validateForm()">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <label for="address">Address</label>
+            <textarea id="address" name="address" placeholder="Enter your full address" required></textarea>
+
+            <label for="description">Description</label>
+            <textarea id="description" name="description" placeholder="Service description:" required></textarea>
+            <a href="submitted page.html">
+                <button type="button">Submit</button>
+                </a>
+
+        </form>
+    </section>
+
+    <script>
+        function validateForm() {
+            const phoneInput = document.getElementById("phone").value;
+            if (phoneInput.length !== 10 || isNaN(phoneInput)) {
+                alert("Please enter a valid 10-digit phone number.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+
+</body>
+</html>
+<style>
+    /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f9f9f9;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    font-size: calc(1.2rem + 1vw); /* Responsive font size */
+    font-weight: bold;
+}
+
+.logo span.hub {
+    color: #e74c3c;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: calc(0.9rem + 0.3vw); /* Responsive font size */
+}
+
+nav a:hover {
+    color: #e63946;
+}
+/* Sub Navigation */
+.sub-nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.sub-nav a {
+    margin: 0 15px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: calc(0.9rem + 0.3vw); /* Responsive font size */
+}
+
+.sub-nav a:hover {
+    color: #e63946;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    padding: 15px;
+    text-align: center;
+    font-size: calc(0.8rem + 0.4vw); /* Responsive font size */
+    color: #333;
+}
+
+/* Request Service Form */
+.request-service {
+    max-width: 800px; /* Increased width for larger form */
+    margin: 20px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 15px; /* Increased border radius */
+    text-align: center;
+}
+
+.request-service h1 {
+    font-size: calc(1.5rem + 1vw); /* Responsive font size */
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.request-service .form-description {
+    font-size: calc(0.9rem + 0.4vw); /* Responsive font size */
+    color: #666;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-size: calc(0.9rem + 0.4vw); /* Responsive font size */
+    font-weight: 600;
+    color: #333;
+    text-align: left;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Increased input field border radius */
+    font-size: calc(0.9rem + 0.3vw); /* Responsive font size */
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #e74c3c;
+}
+
+form #address {
+    height: 150px; /* Increased height for address */
+    resize: vertical;
+}
+
+form #description {
+    height: 100px;
+    resize: vertical;
+}
+
+button {
+    width:100%;
+    padding: 12px 0;
+    background-color: #e74c3c;
+    color: #ffffff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #c0392b;
+}
+
+/* Responsive Layout */
+@media (min-width: 600px) {
+    .request-service {
+        padding: 50px;
+    }
+}
+
+@media (min-width: 768px) {
+    .breadcrumb {
+        font-size: calc(1rem + 0.4vw);
+    }
+
+    .request-service h1 {
+        font-size: calc(2rem + 0.5vw);
+    }
+
+    form input, form textarea {
+        font-size: calc(1rem + 0.3vw);
+    }
+}
+
+</style>

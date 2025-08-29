@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - ServiceHub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span>Service</span><span class="hub">Hub</span>
+        </div>
+        <nav>
+            <a href="landingpage.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="about us.html">About Us</a>
+            <a href="contact us.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <h1>About Us</h1>
+        <p class="intro">
+            Welcome to ServiceHub, This is the official website of Ravi Services which is now being run in Khammam, Telangana, India.
+        </p>
+        <p class="description">
+            ServiceHub is your go-to platform for connecting with highly experienced professionals across a wide range of services.
+            Whether you need help with home repairs, personal grooming, event planning, or tutoring, we’ve got you covered! 
+            Our mission is to simplify the process of finding and booking trusted experts by bringing them all together in one place.
+        </p>
+        <p class="vision">
+            Our vision is to build a community where quality services are accessible and reliable, helping individuals and businesses find the right solutions at the right time. Join us, and let’s simplify life, one at a time!
+        </p>
+    </main>
+    <footer>
+        <p class="founder">
+            <strong>Founded By :</strong> Katta Ravi
+        </p>
+    </footer>
+</body>
+</html>
+<style>
+    /* Import Outfit font */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    color: #333;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo span.hub {
+    color: #e74c3c;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #e63946;
+}
+/* Main content styles */
+main {
+    max-width: 800px;
+    text-align: center;
+    margin: 30px auto;
+    flex-grow: 1;
+}
+
+h1 {
+    font-size: calc(2rem + 1vw);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.intro, .description, .vision {
+    font-size: calc(1rem + 0.5vw);
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Footer styles */
+footer {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.founder {
+    font-size: 1.5rem;
+    color: #e63946;
+    font-weight: 700;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+    }
+
+    footer {
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+</style>

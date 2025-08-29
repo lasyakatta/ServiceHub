@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to ServiceHub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header>
+        <h1><span class="logo-bold">Service</span><span class="logo-pink">Hub</span></h1>
+    </header>
+    <div class="container">
+        <h2>Login to <span class="logo-bold">Service</span><span class="logo-pink">Hub</span></h2>
+        <form>
+            <label for="email">Phone Number</label>
+            <input type="tel" id="phone" name="email" placeholder="Enter your phone number" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+            <!-- Wrap the button with an anchor tag -->
+            <a href="landingpage.html">
+                <button type="button">Login</button> <!-- Change type to "button" to prevent form submission -->
+            </a>
+        </form>
+        <div class="signup-link">
+        <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+        </div>
+    </div>
+</body>
+</html>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+    position: relative;
+}
+
+header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+header h1,
+h2 {
+    font-size: 29px;
+    font-weight: 600;
+}
+
+.logo-bold {
+    color: #000000; /* Black color for "Service" */
+}
+
+.logo-pink {
+    color: #ff5c5c; /* Soft pink color for "Hub" */
+}
+
+.container {
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}
+
+label {
+    font-weight: 600;
+    font-size: 16px;
+    color: #000000;
+}
+
+input[type="tel"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.signup-link {
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.signup-link a {
+    color: #5bb1ff;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #5bb1ff;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4a9fe2;
+}
+
+p {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+p a {
+    color: #5bb1ff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+</style>

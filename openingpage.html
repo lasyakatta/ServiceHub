@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ServiceHub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <h2 class="logo">Service<span class="highlight">Hub</span></h2>
+    </header>
+
+    <div class="container">
+        <h1>Welcome to <span class="highlight">ServiceHub</span></h1>
+        <p class="subtitle">Your One-Stop Solution</p>
+        <p class="description">Easy Booking for all services</p>
+        <a href="signuppage.html">
+            <button class="register-button">Register Now</button>
+        </a>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="contact">Contact Us: xxxxxxxxxx</div>
+            <div class="address">Khammam, Telangana, India</div>
+            <div class="name">Katta Ravi</div>
+        </div>
+    </footer>    
+</body>
+</html>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-image: url(SERVICEHUBbackground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding: 0; 
+}
+
+.navbar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.highlight {
+    color: #ff6b6b;
+}
+
+.container {
+    text-align: left; 
+    padding: 5px;
+    max-width: 500px;
+    width: 100%;
+    flex-grow: 1;
+    margin-top: 250px;  
+    margin-left: 20px; 
+}
+
+h1 {
+    font-size: 2.8rem;
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.subtitle {
+    font-size: 1.65rem;
+    color: #666;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.description {
+    font-size: 1.4rem;
+    color: #999;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.register-button {
+    padding: 15px 30px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #ff6b6b;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.register-button:hover {
+    background-color: #ff4a4a;
+}
+footer {
+    width: 100%;
+    background-color: #f1f1f1;
+    padding: 20px 10px;
+    text-align: left; 
+    position: relative;
+    bottom: 0;
+    margin-top: auto;
+}
+
+/* Footer Content */
+.footer-content {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #333;
+    font-size: 1rem;
+}
+
+.footer-content div {
+    width: auto;
+}
+
+.footer-content .address {
+    text-align: center;
+    flex-grow: 1; 
+}
+
+.footer-content .contact {
+    text-align: left;
+    flex-shrink: 0; 
+
+.footer-content .name {
+    text-align: right;
+    flex-shrink: 0; 
+}
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1.25rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .register-button {
+        padding: 12px 25px;
+        font-size: 0.9rem;
+    }
+
+    .footer-content {
+        font-size: 0.9rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    .subtitle {
+        font-size: 1.1rem;
+    }
+
+    .description {
+        font-size: 0.9rem;
+    }
+
+    .register-button {
+        padding: 12px 20px;
+        font-size: 0.8rem;
+    }
+
+    .footer-content {
+        font-size: 0.8rem;
+        flex-direction: column;
+        align-items: flex-start; 
+    }
+}
+
+@media (max-width: 320px) {
+    .footer-content {
+        font-size: 0.75rem;
+    }
+}
+</style>
+

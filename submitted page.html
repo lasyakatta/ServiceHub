@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission Success</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="landingpage.html" class="back-link">&lt; Home</a>
+    <div class="container">
+        <div class="icon-wrapper">
+            <div class="success-icon">
+                <div class="tick-mark"></div>
+            </div>
+        </div>
+        <p class="success-text">SUCCESSFULLY SUBMITTED</p>
+    </div>
+</body>
+</html>
+<style>
+    /* Import Outfit font */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+    color: #333;
+    position: relative;
+}
+
+.back-link {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 1.2rem;
+    color: #555;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.back-link:hover {
+    color: #e63946;
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.success-icon {
+    width: 20vw;
+    height: 20vw;
+    max-width: 120px;
+    max-height: 120px;
+    background-color: #f2c4cc;
+    clip-path: polygon(50% 0%, 85% 15%, 100% 50%, 85% 85%, 50% 100%, 15% 85%, 0% 50%, 15% 15%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.tick-mark {
+    position: relative;
+    width: 55%;
+    height: 55%;
+}
+
+.tick-mark::before, .tick-mark::after {
+    content: '';
+    position: absolute;
+    background-color: white;
+    border-radius: 2px;
+}
+
+.tick-mark::before {
+    width: 35%;
+    height: 8%;
+    top: 50%;
+    left: 25%;
+    transform: rotate(45deg);
+}
+
+.tick-mark::after {
+    width: 70%;
+    height: 8%;
+    top: 30%;
+    left: 42%;
+    transform: rotate(-45deg);
+}
+
+.success-text {
+    font-size: calc(1.5rem + 1vw);
+    font-weight: 700;
+    color: #555;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .success-icon {
+        width: 25vw;
+        height: 25vw;
+    }
+
+    .success-text {
+        font-size: calc(1.2rem + 1vw);
+    }
+}
+
+@media (max-width: 480px) {
+    .success-icon {
+        width: 30vw;
+        height: 30vw;
+    }
+
+    .success-text {
+        font-size: calc(1rem + 1vw);
+    }
+
+    .back-link {
+        font-size: 1rem;
+    }
+}
+
+</style>

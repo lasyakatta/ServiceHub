@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ServiceHub - Home Repairs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <span>Service</span><span class="hub">Hub</span>
+        </div>
+        <nav>
+            <a href="landingpage.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="about us.html">About Us</a>
+            <a href="contact us.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <!-- Sub-Navigation for Services -->
+    <div class="sub-nav">
+        <a href="home repairs.html">Home Repairs</a>
+        <a href="wedding planning.html">Wedding Planning</a>
+        <a href="building construction.html">Building Construction</a>
+        <a href="other services.html">Other Services</a>
+    </div>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+        <p>Home / Directory / Other Services</p>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="service-card">
+            <img src="C:\Users\katta\OneDrive\Pictures\Screenshots\Screenshot 2024-09-07 111224.png" alt="Home Foods">
+            <p>Home Foods</p>
+            <a href="submission form.html">
+            <button>Book Now</button>
+            </a>
+        </div>
+        <div class="service-card">
+            <img src="C:\Users\katta\OneDrive\Pictures\Screenshot 2024-09-07 111439.png" alt="Grocery Delivery">
+            <p>Grocery Delivery</p>
+            <a href="submission form.html">
+            <button>Book Now</button>
+            </a>
+        </div>
+        <div class="service-card">
+            <img src="C:\Users\katta\OneDrive\Pictures\Screenshots\Screenshot 2024-09-07 111631.png" alt="Home Tuition">
+            <p>Home Tuition</p>
+            <a href="submission form.html">
+            <button>Book Now</button>
+            </a>
+        </div>
+        <div class="service-card">
+            <img src="C:\Users\katta\OneDrive\Pictures\Screenshots\Screenshot 2024-09-07 111849.png" alt="Haitcut at Home">
+            <p>Haitcut at Home</p>
+            <a href="submission form.html">
+            <button>Book Now</button>
+            </a>
+        </div>
+        <div class="service-card">
+            <img src="C:\Users\katta\OneDrive\Pictures\Screenshots\Screenshot 2024-11-14 135404.png" alt="Beauty Salon">
+            <p>Beauty Salon at Home</p>
+            <a href="submission form.html">
+            <button>Book Now</button>
+            </a>
+        </div>
+    </section>
+
+</body>
+</html>
+<style>
+    /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f9f9f9;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo span.hub {
+    color: #e74c3c;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+}
+nav a:hover {
+    color: #e63946;
+}
+
+/* Sub Navigation */
+.sub-nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.sub-nav a {
+    margin: 0 15px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.sub-nav a:hover {
+    color: #e63946;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    padding: 15px;
+    text-align: center;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Services Section */
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.service-card {
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #f5cccc;
+    transition: transform 0.3s;
+    max-width: 200px;
+    width: 100%;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    margin-top: 5px;
+}
+
+.service-card button {
+    padding: 8px 20px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.service-card button:hover {
+    background-color: #c0392b;
+}
+
+/* Responsive Text */
+h1, h2, p, .service-card p {
+    font-size: calc(1em + 0.5vw);
+}
+
+/* Responsive Layout */
+@media (min-width: 600px) {
+    .services {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    .services {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    header {
+        padding: 20px 40px;
+    }
+
+    .logo {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .breadcrumb {
+        font-size: 1.2rem;
+    }
+
+    .service-card p {
+        font-size: 1.1rem;
+    }
+}
+</style>
